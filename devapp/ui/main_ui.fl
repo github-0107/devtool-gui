@@ -1,0 +1,46 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0400
+header_name {.h}
+code_name {.cxx}
+class UserInterface {open
+} {
+  Function {make_window()} {open
+  } {
+    Fl_Window main_win {
+      label {Devel Tool} open selected
+      xywh {600 250 650 450} type Double labelsize 16 hide
+    } {
+      Fl_Input search_input {
+        xywh {355 18 200 25} box FLAT_BOX labeltype NO_LABEL
+      }
+      Fl_Button search_btn {
+        label Search
+        xywh {575 18 50 25}
+      }
+      Fl_Scroll content {open
+        xywh {5 60 640 385} box UP_BOX labelsize 10
+      } {
+        Fl_Button jsn_fmt_btn {
+          label {JSON Formatter}
+          image {icon/JSON.png} xywh {10 65 90 90} labelsize 10
+        }
+        Fl_Button md5_btn {
+          label MD5
+          image {icon/md5.png} xywh {110 65 90 90} labelsize 10
+        }
+        Fl_Button sql_fmt_btn {
+          label {SQL Formatter}
+          image {icon/sql.png} xywh {210 65 90 90} labelsize 10
+        }
+        Fl_Button csv_btn {
+          label CSV
+          image {icon/CSV.png} xywh {310 65 90 90} labelsize 10
+        }
+        Fl_Button excel_btn {
+          label Excel
+          image {icon/Excel.png} xywh {410 65 90 90} labelsize 10
+        }
+      }
+    }
+  }
+}

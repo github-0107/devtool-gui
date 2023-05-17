@@ -1,0 +1,22 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0400
+header_name {.h}
+code_name {.cxx}
+class UserInterface {open
+} {
+  Function {make_window()} {open
+  } {
+    Fl_Window json_fmt_win {
+      label {JSON Formatter} open
+      xywh {610 260 550 450} type Double hide
+    } {
+      Fl_Text_Editor json_text {
+        xywh {10 10 530 350}
+      }
+      Fl_Button submit {
+        label Format selected
+        xywh {250 380 60 30}
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0400
+header_name {.h}
+code_name {.cxx}
+class UserInterface {open
+} {
+  Function {make_window()} {open
+  } {
+    Fl_Window sql_fmt_win {open
+      xywh {610 260 550 450} type Double hide
+    } {
+      Fl_Text_Editor text_editor {
+        xywh {5 5 540 280}
+      }
+      Fl_Button fmt_btn {
+        label Format
+        xywh {180 385 80 30}
+      }
+      Fl_Button clear_btn {
+        label Clear
+        xywh {290 385 80 30}
+      }
+      Fl_Check_Button uppercase {
+        label Uppercase selected
+        xywh {400 300 30 30} down_box DOWN_BOX
+      }
+      Fl_Input space {
+        label {Space: }
+        xywh {100 300 260 30}
+      }
+    }
+  }
+}

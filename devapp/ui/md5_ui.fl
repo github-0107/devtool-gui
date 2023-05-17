@@ -1,0 +1,42 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0400
+header_name {.h}
+code_name {.cxx}
+class UserInterface {open
+} {
+  Function {make_window()} {open
+  } {
+    Fl_Window md5_win {open selected
+      xywh {610 260 550 450} type Double labelfont 4 hide
+    } {
+      Fl_Input input_text {
+        label {Input: }
+        xywh {75 50 220 30}
+      }
+      Fl_Button encrypt_btn {
+        label Encrypt
+        xywh {320 50 80 30}
+      }
+      Fl_Button clear_btn {
+        label Clear
+        xywh {420 50 80 30}
+      }
+      Fl_Input upper32_input {
+        label {32 bits [uppercase]: }
+        xywh {165 100 335 30} textfont 4
+      }
+      Fl_Input lower32_input {
+        label {32 bits [lower case]: }
+        xywh {165 150 335 30} textfont 4
+      }
+      Fl_Input upper16_input {
+        label {16 bits [uppercase]: }
+        xywh {165 200 335 30} textfont 4
+      }
+      Fl_Input lower16_input {
+        label {16 bits [lower case]: }
+        xywh {165 250 335 30} textfont 4
+      }
+    }
+  }
+}
